@@ -1,5 +1,5 @@
 <div style="z-index:1000000;position: fixed;top: 0px;left:0px;background-color: rgba(255,255,255,0.6);min-width: 194px;border: 1px solid rgba(0,0,0,0.15);overflow: auto;max-height: 600px;">
     <script>var a=".me_collapse",b=".me_expand";$(function(){$(b).hide();$(a).click(function(){var width = (($(this).parent().css("width")).replace("px","")-50)+"px";$(this).parent().animate({left: "-=" + width});$(a).hide();$(b).show();$(b).css("left", "+=" + width);});$(b).click(function(){$(this).parent().animate({left: "0px" });$(b).animate({left: "0px" });$(a).show();$(b).hide();});});</script>
-    <button class="me_collapse">-</button><button class="me_expand hide" style="position: relative;">+</button>
+    <button class="me_collapse">-</button><button class="me_expand" style="position: relative;">+</button>
     <pre style="background-color: transparent !important;border: none !important;">{{scope_var|json}}</pre>
 </div>
